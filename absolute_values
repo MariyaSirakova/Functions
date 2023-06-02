@@ -1,0 +1,10 @@
+Write a program that receives a sequence of numbers, separated by a single space, and prints their absolute value
+as a list. Use abs()
+
+numbers_line = input().split()
+absolute_value = []
+
+for element in numbers_line:
+    absolute_value.append(abs(float(element)))
+
+print(absolute_value)
