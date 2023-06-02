@@ -1,0 +1,9 @@
+Write a program that rounds all the given numbers, separated by a single space, and prints the result as a list. Use
+round().
+
+numbers = list(map(float,input().split()))
+numbers_round = []
+for element in numbers:
+    numbers_round.append(round(element))
+
+print(numbers_round)
