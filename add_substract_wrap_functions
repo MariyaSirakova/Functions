@@ -1,0 +1,24 @@
+You will receive three integer numbers.
+Write functions named:
+• sum_numbers() that returns the sum of the first two integers
+• subtract() that returns the difference between the returned result of the first function and the third
+integer
+Wrap the two functions in a function named add_and_subtract() which will receive the three numbers as
+parameters. Print the result of the subtract() function on the console.
+
+def sum_numbers(first_num, second_num):
+    return first_num + second_num
+
+def subtract(sum, third_num):
+    return sum - third_num
+
+def add_and_subtract(number_1, number_2, number_3):
+    sum_of_two_digits = sum_numbers(number_1, number_2)
+    result = subtract(sum_of_two_digits, number_3)
+    return result
+
+num_1 = int(input())
+num_2 = int(input())
+num_3 = int(input())
+
+print(add_and_subtract(num_1, num_2,num_3))
