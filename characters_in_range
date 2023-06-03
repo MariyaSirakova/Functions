@@ -1,0 +1,14 @@
+Write a function that receives two characters and returns a single string with all the characters in between them
+(according to the ASCII code), separated by a single space. Print the result on the console.
+
+def characters_line(first, second):
+    new_string = []
+    for curr_char in range(ord(first)+1, ord(second)):
+        new_string.append(chr(curr_char))
+    return new_string
+
+
+first_letter = input()
+second_letter = input()
+
+print(*characters_line(first_letter,second_letter))
