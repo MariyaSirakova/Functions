@@ -1,0 +1,20 @@
+Write a function that, depending on the first line of the input, reads one of the following strings: "int", "real",or "string".
+• If the data type is an int, multiply the number by 2.
+• If the data type is real, multiply the number by 1.5 and format the result to the second decimal point.
+• If the data type is a string, surround the input with "$".
+
+def dependance(first, second):
+    if first == 'int':
+        result = float(second) * 2
+        return f'{result:.0f}'
+    elif first == 'real':
+        result = float(second) * 1.5
+        return f'{result:.2f}'
+    elif first == 'string':
+        return f'${second}$'
+
+
+first_word = input()
+second_word = input()
+
+print(dependance(first_word,second_word))
