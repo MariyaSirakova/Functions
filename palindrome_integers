@@ -1,0 +1,16 @@
+Write a function that receives a list of positive integers, separated by comma and space ", ". The function should check if each integer is
+a palindrome - True or False. Print the result.
+
+
+def chek_palindrome(some_numbers):
+
+    if some_numbers == some_numbers [:: -1]:
+        return True
+    return False
+
+
+numbers = input().split(", ")
+
+for number in numbers:
+    print(chek_palindrome(number))
+
